@@ -75,3 +75,12 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 (setq projectile-project-search-path '("~/personal/" "~/work/"))
+
+(setq-hook! 'typescript-mode-hook
+   +format-with-lsp nil)
+
+(setq-hook! 'typescript-tsx-mode-hook
+  +format-with-lsp nil)
+
+(setq-hook! 'javascript-mode-hook
+  +format-with-lsp nil)
