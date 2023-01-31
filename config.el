@@ -84,3 +84,7 @@
 
 (setq-hook! 'javascript-mode-hook
   +format-with-lsp nil)
+
+(use-package! flycheck
+  :config
+  (global-flycheck-mode +1))
